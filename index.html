@@ -10,7 +10,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
     <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
-
+<link href="css/carousel.css" rel="stylesheet">
 <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -116,7 +116,53 @@
                   <li><span class="badge bg-secondary">2.</span> <p class="h5">В системных настройках проверить чтобы на МАС были <span class="badge rounded-pill bg-danger">сделаны все обновления</span> - это важно. Очень важно т.к. <u>без последних обновлений Zet9 не работает</u>❌</p></li>
                   <li><span class="badge bg-secondary">3.</span> <p class="h5">Ещё момент у вас должны быть права администратора т.е. вы "главный"</p></li>
                     <li>
-                      <span class="badge bg-secondary">4.</span> <p class="h5">Нужно установить <a class="card-link" href="https://anydesk.com/en/downloads/mac-os">программу-удаленный доступ</a> к вашему ПК 🖥️💻 (обязательно дать *доступ* ‼️ программе, там же в системных настройках доступ к диску, запись экрана и разрешить ассистивным приложениям управления ПК) См. Пример МАС по<a class="card-link" href="https://disk.yandex.ru/d/DxNC8Ntf8soQlA">ссылке!</a></p>
+                      <span class="badge bg-secondary">4.</span> <p class="h5">Нужно установить <a class="card-link" href="https://anydesk.com/en/downloads/mac-os">программу-удаленный доступ</a> к вашему ПК 🖥️💻 (обязательно дать *доступ* ‼️ программе, там же в системных настройках доступ к диску, запись экрана и разрешить ассистивным приложениям управления ПК) См. Пример (в картинках) ниже по кнопке 👇</p>
+                        <div class="accordion" id="accordionMac">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMacOne" aria-expanded="true" aria-controls="collapseOne">
+                                Пример действий для предоставления доступа
+                              </button>
+                            </h2>
+                            <div id="collapseMacOne" class="accordion-collapse collapse" data-bs-parent="#accordionMac">
+                              <div class="accordion-body">
+                                <strong>В системных настройках</strong> необходимо дать доступ
+                                  <div id="myCarousel" class="carousel slide mb-6 align-items-center" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true" ></button>
+                                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item">
+                                        <div class="container">
+                                          <img src="Images/Access1.jpeg" alt="...">
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="container">
+                                          <img src="Images/Access2.jpeg" alt="...">
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item active">
+                                        <div class="container">
+                                          <img src="Images/Access3.jpeg" alt="...">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       <p class="h5"><span class="badge rounded-pill bg-warning text-dark">Примечание</span> Приложение <a class="card-link" href="https://www.winehq.org/">🍷</a> через которое будет работать Зет 9, для МАС-будет <u>безплатное</u>. Его потом <u>удалять <span class="badge rounded-pill bg-danger">НЕ нужно!!!</span></u></p>
                     </li>
                   <li><span class="badge bg-secondary">5.</span> <p class="h5">Обычно, повторюсь, обычно, установка по времени займёт от 15 мин и до🤯... Зависит от многих факторов. А также от вашего интернет соединения, сталкивался с тем что при слабой связи установка не проходит🤷‍♂️, и приходится решить с интернетом</p></li>
