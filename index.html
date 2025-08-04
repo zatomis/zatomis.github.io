@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Макс Юричъ">
+    <meta name="description" content="Консультации по настройке программы Zet9 для астрологов. Помощь с установкой на Windows, Mac и мобильные устройства.">
     <meta name="generator" content="Hugo 0.84.0">
     <title>💯 Планеты побуждают, но не вынуждают...</title>
     <link rel="canonical" href="https://zatomis.github.io/">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/carousel.css" rel="stylesheet">
@@ -370,5 +373,33 @@
 </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/counter.js" type='text/javascript'></script>
+    <script>
+      const themeSwitch = document.querySelector('#checkbox');
+
+      const set_theme = (theme) => {
+          document.documentElement.setAttribute('data-bs-theme', theme)
+          localStorage.setItem('theme', theme)
+          if (theme === 'dark') {
+            themeSwitch.checked = true;
+          } else {
+            themeSwitch.checked = false;
+          }
+      }
+
+      const get_theme = () => {
+          const theme = localStorage.getItem('theme');
+          if (theme) {
+              return theme;
+          } else {
+              return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+      }
+
+      themeSwitch.addEventListener('change', function(e) {
+        set_theme(e.target.checked ? 'dark' : 'light');
+      });
+
+      set_theme(get_theme());
+    </script>
   </body>
 </html>
